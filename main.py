@@ -5,7 +5,7 @@ from crewai import Agent, Task, Process, Crew
 
 load_dotenv()
 
-#load GPT4
+#load APIkeys
 api = os.environ.get("OPENAI_API_KEY")
 
 #DEFINE AGENTS
@@ -48,7 +48,7 @@ businessguy = Agent(
       allow_delegation=True, #allow agents to collaborte
 )
 
-reserachtask = Task(
+researchtask = Task(
     description="""Analyze what is the market demand for "home made healthy laddoos in India". Write a detailed report 
                     with description of what the ideal customer profile might look like, and how to reach the widest possbile
                     audience.                                                                        
@@ -80,7 +80,7 @@ businesstask = Task(
 
 crew = Crew(
     agents=[marketer, technologist, businessguy],
-    tasks=[reserachtask, technologytask, businesstask],
+    tasks=[researchtask, technologytask, businesstask],
     verbose=True,
     process=Process.sequential,
 )
@@ -88,4 +88,3 @@ crew = Crew(
 result = crew.kickoff()
 print("************************************")
 print(result)
-print("test new user commit")
