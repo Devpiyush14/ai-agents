@@ -49,7 +49,7 @@ businessguy = Agent(
 )
 
 reserachtask = Task(
-    description="""Analyze what is the market demand for "personalized AI Agents with contextual memory in India". Write a detailed report 
+    description="""Analyze what is the market demand for "home made healthy laddoos in India". Write a detailed report 
                     with description of what the ideal customer profile might look like, and how to reach the widest possbile
                     audience.                                                                        
                     """,
@@ -59,7 +59,7 @@ reserachtask = Task(
 )
 
 technologytask= Task(
-    description="""Analyze how to develop "personalized AI Agents with contextual memory in India", with minimum resources. Write a detailed report 
+    description="""Analyze how to develop "home made healthy laddoos in India", with minimum resources. Write a detailed report 
                     with description of which technologies the business needs to use for a successful buinsess implementation.                                                                       
                     """,
     expected_output="""The report has to be concise with atleast 10 bullet points in a tabular format, and it has to address the most 
@@ -69,7 +69,7 @@ technologytask= Task(
 
 businesstask = Task(
     description="""Analyze and summarize marketing and technological report, and write a detailed business plan with description of 
-    how to make a sustainable and profitable "personalized AI Agents with contextual memory in India" business.                                                                       
+    how to make a sustainable and profitable "home made healthy laddoos in India" business.                                                                       
                     """,
     expected_output="""The business plan 
     has to be concise with atleast 10 bullet points with : 4 Ideal customer profiles, Total Addressable Market in dollars, Top 5 goals 
@@ -88,3 +88,4 @@ crew = Crew(
 result = crew.kickoff()
 print("************************************")
 print(result)
+print("test new user commit")
